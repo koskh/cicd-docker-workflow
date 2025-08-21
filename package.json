@@ -1,0 +1,20 @@
+{
+  "name": "cicd-docker-workflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koskh/cicd-docker-workflow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koskh/cicd-docker-workflow/issues"
+  },
+  "homepage": "https://github.com/koskh/cicd-docker-workflow#readme",
+  "description": ""
+}
