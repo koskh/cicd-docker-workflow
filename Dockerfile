@@ -11,6 +11,7 @@ COPY . .
 
 # Expose port
 EXPOSE 3000
+EXPOSE 80
 
 # Run app
 CMD ["node", "index.js"]
