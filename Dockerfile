@@ -10,8 +10,7 @@ RUN npm install
 COPY . .
 
 # Expose port
-#EXPOSE 3000
-EXPOSE 80:3000
+EXPOSE 8080
 
 # Run app
 CMD ["node", "index.js"]
