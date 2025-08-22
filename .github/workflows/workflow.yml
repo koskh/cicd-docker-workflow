@@ -29,7 +29,7 @@ jobs:
       - name: Push image to Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
 
-      - name: ✅ Done
+      - name: ✅ Image pushed to Docker
         run: echo "Image pushed to Docker Hub!"
 
       - name: Deploy to EC2 via SSH
@@ -42,3 +42,6 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
             docker stop myapp || true && docker rm myapp || true
             docker run -d --name myapp -p 8080:3000 ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
+
+      - name: 🎉 Done
+        run: echo "Workflow is done"
