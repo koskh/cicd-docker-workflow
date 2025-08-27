@@ -48,7 +48,7 @@ jobs:
           REPOSITORY: my-ecr-repo
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker build -t hablsoft/cicd:latest .
+          docker build -t 504374610848.dkr.ecr.eu-north-1.amazonaws.com/hablsoft/cicd:latest .
           docker push 504374610848.dkr.ecr.eu-north-1.amazonaws.com/hablsoft/cicd:latest
 
       # - name: Login to Docker Hub
